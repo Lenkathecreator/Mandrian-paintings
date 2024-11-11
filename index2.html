@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Painting 2</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 759px;
+            height: 748px;
+            background-color: #000;
+            display: grid;
+            grid-template-columns: 200px 250px 200px 70px;
+            grid-template-rows: 220px 250px 120px 120px;
+            gap: 13px;
+        }
+
+        .box {
+            background-color: #F0F1EC;
+        }
+
+        .white1 {
+            background-color: #F0F1EC;
+        }
+
+        .red {
+            background-color: #E72F24;
+            grid-area: 1 / 2 / 3 / 5;
+        }
+
+        .blue {
+            background-color: #004592;
+            grid-row: span 2;
+        }
+
+        .white3 {
+            grid-area: 3 / 2 / 5 / 4;
+        }
+
+        .yellow {
+            background-color: #F9D01E;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box white1"></div>
+        <div class="box red"></div>
+        <div class="box white2"></div>
+        <div class="box blue"></div>
+        <div class="box white3"></div>
+        <div class="box white4"></div>
+        <div class="box yellow"></div>
+        <div class="box white1"></div>
+    </div>
+</body>
+</html>
